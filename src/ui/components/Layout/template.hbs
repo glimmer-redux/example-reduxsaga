@@ -1,1 +1,7 @@
-<div><h1>Welcome to Glimmer!</h1></div>
+<div>
+  <h1>redux saga run {{number}}</h1>
+  {{#if loading}}
+    <span>loading ...</span>
+  {{/if}}
+  <button onclick={{action demo}}>Dispatch Saga!</button>
+</div>

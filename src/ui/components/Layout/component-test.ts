@@ -8,6 +8,14 @@ module('Component: saga-app', function(hooks) {
 
   test('it renders', async function(assert) {
     await this.render(hbs`<Layout />`);
-    assert.equal(this.containerElement.textContent, 'Welcome to Glimmer!\n');
+    let text = this.containerElement.querySelector('h1').textContent;
+    assert.equal(text, 'redux saga run 0');
+    this.containerElement.querySelector('button').click();
+    let done = assert.async();
+    setTimeout(() => {
+      text = this.containerElement.querySelector('h1').textContent;
+      assert.equal(text, 'redux saga run 1');
+      done();
+    }, 1111);
   });
 });
