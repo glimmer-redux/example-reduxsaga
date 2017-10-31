@@ -7,7 +7,7 @@ module('Component: saga-app', function(hooks) {
   setupRenderingTest(hooks);
 
   test('it renders', async function(assert) {
-    await this.render(hbs`<saga-app />`);
+    await this.render(hbs`<Layout />`);
     assert.equal(this.containerElement.textContent, 'Welcome to Glimmer!\n');
   });
 });
