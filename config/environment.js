@@ -14,12 +14,12 @@ moduleConfiguration['collections']['reducer'] = {
   defaultType: 'reducer'
 };
 
-moduleConfiguration['types']['store'] = {
-  definitiveCollection: 'store'
+moduleConfiguration['types']['middleware'] = {
+  definitiveCollection: 'middleware'
 };
-moduleConfiguration['collections']['store'] = {
-  types: ['store'],
-  defaultType: 'store'
+moduleConfiguration['collections']['middleware'] = {
+  types: ['middleware'],
+  defaultType: 'middleware'
 };
 
 moduleConfiguration['types']['saga'] = {
